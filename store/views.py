@@ -186,4 +186,15 @@ class OrderQtyUpdateView(APIView):
         
 
 
+class OrderResultAPIView(APIView):
 
+    def post(self,request):
+        print('hello')
+        print(request)
+        return JsonResponse('hey')
+
+    def get(self,request):
+        print('hello')
+        print(request)
+
+        return JsonResponse('hey')
