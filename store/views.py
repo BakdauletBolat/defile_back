@@ -191,10 +191,10 @@ class OrderResultAPIView(APIView):
     def post(self,request):
         print('hello')
         print(request)
-        return JsonResponse('hey')
+        return JsonResponse('hey',safe=False)
 
     def get(self,request):
         print('hello')
         print(request)
 
-        return JsonResponse('hey')
+        return JsonResponse('hey',safe=False)
